@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service Desk</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>Service Desk</span>
+    </div>
+    <nav aria-label="Main">
+      <a href="#/home" data-nav="home"><span class="ico" aria-hidden="true">⌕</span>Look up a device</a>
+      <a href="#/repairs" data-nav="repairs"><span class="ico" aria-hidden="true">🛠</span>Repairs<span class="count" id="nav-open-count"></span></a>
+      <a href="#/parts" data-nav="parts"><span class="ico" aria-hidden="true">📦</span>Parts &amp; returns<span class="count warn" id="nav-returns-count"></span></a>
+      <a href="#/help" data-nav="help"><span class="ico" aria-hidden="true">?</span>Help &amp; glossary</a>
+    </nav>
+    <p class="demo-note">Demo data. Nothing here is sent to Apple.</p>
+  </aside>
+
+  <div class="shell">
+    <header class="topbar">
+      <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+      <form class="global-search" id="global-search" role="search">
+        <input id="global-search-input" type="search" autocomplete="off"
+               placeholder="Serial number, IMEI, or repair ID" aria-label="Search by serial number, IMEI, or repair ID">
+        <kbd title="Press / to search from anywhere">/</kbd>
+      </form>
+    </header>
+
+    <main id="main" tabindex="-1"></main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

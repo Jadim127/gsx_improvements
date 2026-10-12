@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RepairDesk
 
 A simplified front desk for independent device repair shops: look up a device by serial or IMEI, check coverage, open a repair, track it through to pickup, and keep on top of parts that need to be sent back.
@@ -55,3 +56,7 @@ When creating a repair the client sends only the part *names* it selected. The s
 - Accidental damage (cracked screen, liquid) is not covered by the limited warranty: full price.
 - With a protection plan, accidental damage costs a flat per-device service fee (Mac $99, Watch $69, phone/tablet $49), never more than the part's full price.
 - Coverage shows a warning when 60 or fewer days remain.
+=======
+# gsx_improvements
+Improvements made to Apple and Best Buy's outdated GSX/RWB System
+>>>>>>> 6645cec5a8a43a761f7fe21402199323e5764f5e
