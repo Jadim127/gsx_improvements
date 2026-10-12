@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RepairDesk</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>RepairDesk</span>
+    </div>
+    <nav aria-label="Main">
+      <a href="#/home" data-nav="home"><span class="ico" aria-hidden="true">⌕</span>Look up a device</a>
+      <a href="#/repairs" data-nav="repairs"><span class="ico" aria-hidden="true">🛠</span>Repairs<span class="count" id="nav-open-count"></span></a>
+      <a href="#/parts" data-nav="parts"><span class="ico" aria-hidden="true">📦</span>Parts &amp; returns<span class="count warn" id="nav-returns-count"></span></a>
+      <a href="#/help" data-nav="help"><span class="ico" aria-hidden="true">?</span>Help &amp; glossary</a>
+    </nav>
+    <p class="demo-note">Demo data for a fictional repair shop. Not affiliated with any device manufacturer.</p>
+  </aside>
+
+  <div class="shell">
+    <header class="topbar">
+      <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+      <form class="global-search" id="global-search" role="search">
+        <input id="global-search-input" type="search" autocomplete="off"
+               placeholder="Serial number, IMEI, or repair ID" aria-label="Search by serial number, IMEI, or repair ID">
+        <kbd title="Press / to search from anywhere">/</kbd>
+      </form>
+    </header>
+
+    <main id="main" tabindex="-1"></main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

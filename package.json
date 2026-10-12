@@ -1,0 +1,18 @@
+{
+  "name": "repairdesk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simplified front desk for device repair shops: lookups, repairs, parts and returns.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
